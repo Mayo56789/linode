@@ -1,0 +1,10 @@
+services:
+  nextcloud:
+    image: nextcloud:latest
+    ports:
+      - "8787:80"
+    volumes:
+      - nextcloud:/var/www/html
+
+volumes:
+  nextcloud:
